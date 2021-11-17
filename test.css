@@ -1,0 +1,63 @@
+/* Menus horizontaux */
+.menusduhaut
+{
+    display: inline-block;
+    width: 1130px;
+    background-image: url("Images/baniere-degrade-menus.jpg");
+    text-align: left;  
+}
+ 
+.menusduhaut ul
+{
+    margin: 0; padding: 0;
+    line-height: 30px; /* taille des menus */
+}
+ 
+.menusduhaut li
+{
+    list-style-type: none;
+    float: left; /* les menus sont placés à gauche */
+    position: relative;
+    background-color: #999; /* l'arrière plan des menus est gris */
+    display: inline-block;
+    font-size: 1.1em;
+ 
+}
+ 
+.menusduhaut ul li a
+{ 
+    color: #000;
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    border: 5px solid #000; /* épaisseur et couleur noir des bordures */
+    text-shadow: 1px 1px 1px #ff0000; /* couleur rouge des menus et sous menus */
+    display: inline-block;
+     
+}
+ 
+.menusduhaut ul ul
+{
+    position: absolute;
+    z-index: 2;
+    top: 31px;
+    visibility: hidden;
+}
+ 
+.menusduhaut ul li:hover ul
+{
+    visibility: visible;
+}
+ 
+.menusduhaut li:hover
+{
+    background-color: #FFF; /* l'arrière plan des menus devient blanc quand on passe la souris dessus */
+}
+ 
+.menusduhaut ul li ul a:hover
+{
+    color: #FFF; /* les titres des sous menus deviennent blanc quand on passe la souris dessus*/
+    background-color: #000; /* l'arrière plan des sous menus devient noir quand on passe la souris dessus */
+}
