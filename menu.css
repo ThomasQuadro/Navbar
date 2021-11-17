@@ -60,7 +60,7 @@ i{
 
 .second li a{
     display: none;
-    color: black;
+    color: white;
     box-sizing: content-box;
     list-style: none;
     text-decoration: none;
@@ -69,12 +69,19 @@ i{
     width: 150px;
     padding-top: 20px;
     border-right: 1px dashed #9AAAB7;
+    /* position: absolute; */
+    text-align: center;
 }
 
-.first li a:hover a{
+.first li:hover .second li a{
     display: block;
 }
 
+.second{
+    background-color: #23364B;
+    text-align: center;
+    padding-inline-start: 0;
+}
 
 @media screen and (max-width: 1360px) and (min-width:767px){
     .first{
