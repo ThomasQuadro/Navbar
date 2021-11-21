@@ -1,19 +1,56 @@
-nav{
-    background-color: #23364B;
-    padding:0;
+body{
+    margin: 0;
+	padding: 0;
+	font: 400 18px Roboto;
+   background-color: black;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.contenu h3, .contenublog h3, .contenuimages h3{
+    font:400 14px Roboto;
+}
+
+.contenu h4, .contenublog h4, .contenuimages h4{
+    font:300  12px bold Roboto;
+}
+
+.contenu p, .contenublog p, .contenuimages p{
+    font:300 10px Roboto;
+}
+
+.contenu input, .contenublog input, .contenuimages input{
+    font:400 14px Roboto;
+}
+
+.first .second{
+    font: 300 14px Roboto;
+}
+
+.second .right , .second .left{
+    font: 300 10px Roboto;
+}
+
+header{
+    margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
+}
+
+nav{
+    background-color: #23364B;
+    width: 100%;
     text-align: center;
     align-items: center;
 }
 
-header .first{
+.first{
     display: flex;
     justify-content: left;
     padding-inline-start: 0;
 }
-
 
 .first li{
     list-style: none;
@@ -22,15 +59,20 @@ header .first{
 }
 
 i{
-    color: rgb(253, 0, 0);
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
+    color: #FFF;
+    font-size: 18px;
+    margin-right: 7px;
+}
+
+.Sousmenu i.fas.fa-angle-double-down{
+    margin-left: 5px;
+    margin-right: 0;
+    font-size: 10px;
 }
 
 .first li a{
     display: block;
-    color: white;
+    color: #FFF;
     box-sizing: content-box;
     list-style: none;
     text-decoration: none;
@@ -51,7 +93,10 @@ i{
 
 .second{
     position: absolute;
+    background-color: #365670;
+    padding-inline-start: 0;
 }
+
 .second li{
     list-style: none;
     font-size: 15px;
@@ -66,42 +111,450 @@ i{
     text-decoration: none;
     font-size: 18px;
     height: 40px;
-    width: 150px;
+    width: auto;
     padding-top: 20px;
-    border-right: 1px dashed #9AAAB7;
-    /* position: absolute; */
-    text-align: center;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-top: 1px dashed #9AAAB7;
+    border-right: none;
+    text-align: left;
+}
+
+.second li a.one{
+    border-top: none;
+    border-right: none;
 }
 
 .first li:hover .second li a{
     display: block;
 }
 
-.second{
-    background-color: #23364B;
+.right{
+    display: none;
+    position: absolute;
+    background-color: #547787;
     text-align: center;
     padding-inline-start: 0;
+    top:0;
+    right:-50%;
 }
 
-@media screen and (max-width: 1360px) and (min-width:767px){
+.right li{
+    list-style: none;
+    font-size: 15px;
+    padding: 0 ;
+}
+
+.right li a{
+    color: white;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    height: 40px;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-top: 1px dashed #9AAAB7;
+    border-right: none;
+    text-align: center;
+}
+
+.right li a.rone{
+    border-top: none;
+    border-right: none;
+}
+
+.second li:hover .right{
+    display: block;
+}
+
+.left{
+    display: none;
+    position: absolute;
+    background-color: #547787;
+    text-align: center;
+    padding-inline-start: 0;
+    top: 33.33%;
+    right: 100%;
+
+}
+
+.left li{
+    list-style: none;
+    font-size: 15px;
+    padding: 0 ;
+}
+
+.left li a{
+    color: white;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    height: 40px;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-top: 1px dashed #9AAAB7;
+    border-right: none;
+    text-align: center;
+}
+
+.left li a.lone{
+    border-top: none;
+    border-right: none;
+}
+
+.second li:hover .left{
+    display: block;
+}
+
+.contenu{
+    display: none;
+    justify-content: space-evenly;
+    position: absolute;
+    width: calc(100% - 200px);
+    height: auto;
+    background-color: #547787;
+    left: 100px ;
+    margin-right: 100px;
+    color: white;
+}
+
+.mega{
+    display: flex;
+    justify-content: left;
+}
+
+.firstcolumn{
+    display: flex;
+    flex-direction: column;
+    width: 33.6%;
+    text-align: left;
+}
+
+.title{
+    display: flex;
+    justify-content: left;
+    background-color: #365670;
+    padding: 15px 15px 10px 15px;
+    font-size: 15px;
+}
+
+.image1 img{
+    height: auto;
+    padding: 15px;
+    width: 100%;
+}
+
+.secondcolumn{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 16.4%;
+}
+
+.categories{
+    padding: 15px;
+}
+
+.categories ul{
+    padding-left: 0;
+    margin-left:0;
+}
+
+#html{
+    margin-top: 0;
+}
+
+.thirdcolumn{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 25%;
+}
+
+.descriptions{
+    padding: 15px;
+}
+
+.descriptions ul{
+    padding-left: 0;
+    margin-left:0;
+}
+
+.descriptions ul h4{
+    margin-bottom: 0px;
+}
+
+.descriptions p{
+    text-align: left;
+    margin:0;
+    opacity: 50%;
+}
+
+.descriptions input.view{
+    margin-top: 20px;
+}
+
+#html2{
+    margin-top: 0;
+}
+
+.fourthcolumn{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width:25%;
+}
+
+.icondescriptions{
+    padding: 0 15px;
+}
+
+.icondescriptions ul{
+    padding-left: 0;
+    margin-left:0;
+}
+
+#web{
+    margin-top: 0;
+}
+
+.icondescriptions i{
+    border-radius: 100%;
+    background-color: #009FE1;
+    width: 25px;
+    height: 25px;  
+    text-align: center;
+    line-height: 25px ; 
+    color: white;
+}
+
+
+
+
+div.icondescriptions li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input.view{
+    color: white;
+    background-color: #2987C5;
+    border: none;
+    padding: 5px 10px 5px 10px;
+}
+
+.contenu li a{
+    display: block;
+    font-size: 0.83em;
+    height: auto;
+    width: 100px;
+    padding-top: 0;
+    border-right: none;
+}
+
+.contenu li a:hover{
+    background-color: #547787;
+}
+
+.first li:hover .contenu{
+    display: block;
+}
+
+.contenublog{
+    display: none;
+    justify-content: space-evenly;
+    position: absolute;
+    width: calc(100% - 200px);
+    height: auto;
+    background-color: #547787;
+    left: 100px ;
+    margin-right: 100px;
+    color: white;
+}
+
+.megablog{
+    display: flex;
+    justify-content: left;
+}
+
+.first li:hover .contenublog{
+    display: block;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 33.33%;
+}
+
+.html5 img{
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 0 15px;
+}
+
+.column1 .texte{
+    text-align: left;
+    padding: 0 15px 15px 15px;
+}
+
+.column1 .texte h3{
+    text-align: justify;
+}
+
+.column2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 33.33%;
+}
+
+.css3 img{
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 0 15px;
+}
+
+.column2 .texte{
+    text-align: left;
+    padding: 0 15px 15px 15px;
+}
+
+.column2 .texte h3{
+    text-align: justify;
+}
+
+.column3{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 33.33%;
+}
+
+.js img{
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 0 15px;
+}
+
+.column3 .texte{
+    text-align: left;
+    padding: 0 15px 15px 15px;
+}
+
+.column1 .texte h3{
+    text-align: justify;
+}
+
+.contenuimages{
+    display: none;
+    justify-content: space-evenly;
+    position: absolute;
+    width: calc(100% - 200px);
+    height: auto;
+    background-color: #547787;
+    left: 100px ;
+    margin-right: 100px;
+    color: white;
+}
+
+.megaimages{
+    display: flex;
+    justify-content: left;
+}
+
+.first li:hover .contenuimages{
+    display: block;
+}
+
+.imagehtml5, .imagecss3 , .imagejs , .imagephp{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 25%;
+}
+
+.img img{
+    width: 100%;
+    height: auto;
+    padding: 0 15px 15px 15px;
+}
+
+.titre{
+    padding: 0 15px 0 15px;
+}
+
+input:hover{
+    background-color: #F36428;
+}
+
+@media screen and (min-width:767px){
     .first{
         display: flex;
         flex-wrap: wrap;
     }
 }
 
-@media screen and (max-width:767px) and (min-width:100px) {
+@media screen and (max-width:767px) {
     nav{
-        width: auto;
+        width: 100%;
+        position: relative;
     }
     .first{
         flex-direction: column;  
     }
     .first li a{
+        text-align: left;
+        padding-left: 15px;
         border:none;
         width:auto;
     }
-    .first li .Sousmenu i i{
-        text-align: right;
-    } 
+    .Sousmenu i.fas.fa-angle-double-down{
+        right: 15px;
+        margin-top: 5px;
+        position: absolute;
+        font-size: 10px;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .right , .left , .second li a{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: calc(100%-100px);
+    }
+    .contenu, .contenublog , .contenuimages{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .mega , .megablog , .megaimages{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .firstcolumn , .secondcolumn , .thirdcolumn , .fourthcolumn , .column1 , .column2 , .column3 , .imagehtml5 , .imagecss3 , .imagejs , .imagephp{
+        width: 100%;
+    }
+    .descriptions p{
+        margin-block-end: 0;
+        margin-block-start: 0;
+        padding-left: 15px;
+    }
+    .contenu input{
+        margin-left: 15px;
+    }
 }

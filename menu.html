@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="menu.css">
         <meta name="Thomas Quadro" content="Menu">
         <script src="https://kit.fontawesome.com/157324e58a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <title>Menu</title>
     </head>
     <body>
@@ -12,23 +15,185 @@
             <nav>
                 <ul class="first">
                     <li id="accueil"><a href="#" class="accueil"><i class="fas fa-home"></i>Accueil</a></li>
-                    <li><a href="#" class="Sousmenu"><i class="fas fa-cogs"></i>Sous-menu<i id="fleche" class="fas fa-angle-double-down"></i></a>
+                    <li><a href="#" class="Sousmenu"><i class="fas fa-cogs"></i>Sous-menu<i  class="fas fa-angle-double-down"></i></a>
+                        <!------------------------------------------------------------->
                         <ul class="second">
-                            <li><a href="#" class="one"><i class="fas fa-home"></i>Accueil</a></li>
-                            <li><a href="#" class="two"><i class="fas fa-cogs"></i>Sous-menu<i id="fleche" class="fas fa-angle-double-down"></i></a></li>
-                            <li><a href="#" class="tree"><i class="fas fa-cogs"></i>Services</a></li>
-                            <li><a href="#" class="four"><i class="fas fa-briefcase"></i>Portofolio</a></li>
-                            <li><a href="#" class="five"><i class="fas fa-bars"></i>Mega Menu</a></li>
-                            <li><a href="#" class="six"><i class="fas fa-bullhorn"></i>Blog</a></li>
-                            <li><a href="#" class="seven"><i class="far fa-image"></i>Images</a></li>
-                            <li><a href="#" class="eight"><i class="fas fa-envelope"></i>Contact</a></li>
+                            <li><a href="#" class="one">Sous menu vers la droite</a>
+                                <!------------------------------------------------>
+                                <ul class="right">
+                                    <li><a href="#" class="rone">mobiles</a></li>
+                                    <li><a href="#" class="rtwo">ordinateur</a></li>
+                                    <li><a href="#" class="rtree">montres</a></li>
+                                </ul>
+                                <!------------------------------------------------->
+                            </li>
+                            <li><a href="#" class="two">Sous menu vers la gauche</a>
+                                <ul class="left">
+                                    <li><a href="#" class="lone">mobiles</a></li>
+                                    <li><a href="#" class="ltwo">ordinateur</a></li>
+                                    <li><a href="#" class="ltree">montres</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="tree">Aucun sous menu</a></li>
                         </ul>
+                        <!-------------------------------------------------------------->
                     </li>
                     <li><a href="#" class="Services"><i class="fas fa-cogs"></i>Services</a></li>
                     <li><a href="#" class="Portofolio"><i class="fas fa-briefcase"></i>Portofolio</a></li>
-                    <li><a href="#" class="Mega-Menu"><i class="fas fa-bars"></i>Mega Menu</a></li>
-                    <li><a href="#" class="Blog"><i class="fas fa-bullhorn"></i>Blog</a></li>
-                    <li><a href="#" class="Images"><i class="far fa-image"></i>Images</a></li>
+                    <li><a href="#" class="Mega-Menu"><i class="fas fa-bars"></i>Mega Menu</a>
+                        <!--------------------------------------------------------------->
+                        <div class="contenu">
+                            <div class="mega">
+                                <!--------------------------------------------------------------->
+                                <div class="firstcolumn">
+                                    <div class="title">
+                                        <h3>Fonctionnalités</h3>
+                                    </div>
+                                    <div class="image1">
+                                        <img src="htmlcss.png">
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                                <div class="secondcolumn">
+                                    <div class="title">
+                                        <h3>Catégories</h3>
+                                    </div>
+                                    <div class="categories">
+                                        <ul>
+                                            <li><a href="#"><h4 id="html">HTML</h4></a></li>
+                                            <li><a href="#"><h4>CSS</h4></a></li>
+                                            <li><a href="#"><h4>JAVASCRIPT</h4></a></li>
+                                            <li><a href="#"><h4>PHP</h4></a></li>
+                                            <li><a href="#"><h4>SQL</h4></a></li>
+                                            <input class="view" type="button" href="#" value="Voir plus ...">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                                <div class="thirdcolumn">
+                                    <div class="title">
+                                        <h3>Description</h3>
+                                    </div>
+                                    <div class="descriptions">
+                                        <ul>
+                                            <li><a href="#"><h4 id="html2">HTML</h4></a><p>Description HTML5</p></li>
+                                            <li><a href="#"><h4>CSS</h4></a><p>Description CSS</p></li>
+                                            <li><a href="#"><h4>JavaScript</h4></a><p>Description JS en ECMA6+</p></li>
+                                            <li><a href="#"><h4>Autres</h4></a><p>Description du reste</p></li>
+                                            <input class="view" type="button" href="#" value="Voir plus ...">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                                <div class="fourthcolumn">
+                                    <div class="title">
+                                        <h3>Icon + Description</h3>
+                                    </div>
+                                    <div class="icondescriptions">
+                                        <ul>
+                                            <li id="web"><a href="#"><i class="fa fa-globe"></i><h4>Web</h4></a></li>
+                                            <li><a href="#"><i class="fa fa-mobile"></i><h4>Mobile</h4></a></li>
+                                            <li><a href="#"><i class="fa fa-arrows-h"></i><h4>Responsive</h4></a></li>
+                                            <li><a href="#"><i class="fa fa-desktop"></i><h4>Desktop</h4></a></li>
+                                            <li><a href="#"><i class="fa fa-paint-brush"></i><h4>UI/UX</h4></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                            </div>
+                        </div>
+                        <!--------------------------------------------------------------->
+                    </li>
+                    <li><a href="#" class="Blog"><i class="fas fa-bullhorn"></i>Blog</a>
+                        <!--------------------------------------------------------------->
+                        <div class="contenublog">
+                            <div class="megablog">
+                                <!--------------------------------------------------------------->
+                                <div class="column1">
+                                    <div class="html5">
+                                        <img src="html5.jpg">
+                                    </div>
+                                    <div class="texte">
+                                        <h3>Lorem ipsum</h3>
+                                        <p>Lorem ipsum dolor sit amet. Et illum ipsa ea fugit enim eum perferendis omnis et voluptatum aliquam aut voluptate quae ad nobis suscipit! Et reprehenderit doloribus et odio asperiores aut eveniet rerum et galisum voluptatem et minus nemo aut laboriosam dignissimos! Vel possimus corrupti sed perspiciatis voluptatem est nostrum odit rem dolorem consequatur.
+                                        </p>
+                                        <input class="view" type="button" value="En savoir plus ...">
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                                <div class="column2">
+                                    <div class="css3">
+                                        <img src="css3.jpg">
+                                    </div>
+                                    <div class="texte">
+                                        <h3>Lorem ipsum</h3>
+                                        <p>Lorem ipsum dolor sit amet. Et illum ipsa ea fugit enim eum perferendis omnis et voluptatum aliquam aut voluptate quae ad nobis suscipit! Et reprehenderit doloribus et odio asperiores aut eveniet rerum et galisum voluptatem et minus nemo aut laboriosam dignissimos! Vel possimus corrupti sed perspiciatis voluptatem est nostrum odit rem dolorem consequatur.
+                                        </p>
+                                        <input class="view" type="button" value="En savoir plus ...">
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                                <div class="column3">
+                                    <div class="js">
+                                        <img src="js.jpg">
+                                    </div>
+                                    <div class="texte">
+                                        <h3>Lorem ipsum</h3>
+                                        <p>Lorem ipsum dolor sit amet. Et illum ipsa ea fugit enim eum perferendis omnis et voluptatum aliquam aut voluptate quae ad nobis suscipit! Et reprehenderit doloribus et odio asperiores aut eveniet rerum et galisum voluptatem et minus nemo aut laboriosam dignissimos! Vel possimus corrupti sed perspiciatis voluptatem est nostrum odit rem dolorem consequatur.
+                                        </p>
+                                        <input class="view" type="button" value="En savoir plus ...">
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                            </div>
+                        </div>
+                        <!--------------------------------------------------------------->
+                    </li>
+                    <li><a href="#" class="Images"><i class="far fa-image"></i>Images</a>
+                        <!--------------------------------------------------------------->
+                        <div class="contenuimages">
+                            <div class="megaimages">
+                                <!--------------------------------------------------------------->
+                                <div class="imagehtml5">
+                                    <div class="titre">
+                                        <h3>HTML 5</h3>
+                                    </div>
+                                    <div class="img">
+                                        <img src="html5.jpg">
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                                <div class="imagecss3">
+                                    <div class="titre">
+                                        <h3>CSS 3</h3>
+                                    </div>
+                                    <div class="img">
+                                        <img src="css3.jpg">
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                                <div class="imagejs">
+                                    <div class="titre">
+                                        <h3>JAVASCRIPT ES 6</h3>
+                                    </div>
+                                    <div class="img">
+                                        <img src="js.jpg">
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                                <div class="imagephp">
+                                    <div class="titre">
+                                        <h3>PHP 7</h3>
+                                    </div>
+                                    <div class="img">
+                                        <img src="php2.jpg">
+                                    </div>
+                                </div>
+                                <!--------------------------------------------------------------->
+                            </div>
+                        </div>
+                        <!--------------------------------------------------------------->
+                    </li>
                     <li><a href="#" class="Contact"><i class="fas fa-envelope"></i>Contact</a></li>
                 </ul>
             </nav>
